@@ -1,0 +1,280 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* ReLoop custom colors */
+  --color-emerald: oklch(0.596 0.145 163);
+  --color-emerald-light: oklch(0.92 0.04 163);
+  --color-kraft: oklch(0.45 0.1 55);
+  --color-kraft-light: oklch(0.7 0.08 55);
+  --color-crown: oklch(0.78 0.15 85);
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.985 0.002 250);
+  --foreground: oklch(0.25 0.02 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.25 0.02 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.02 250);
+  --primary: oklch(0.596 0.145 163);
+  --primary-foreground: oklch(0.98 0.01 163);
+  --secondary: oklch(0.96 0.02 55);
+  --secondary-foreground: oklch(0.35 0.08 55);
+  --muted: oklch(0.96 0.005 250);
+  --muted-foreground: oklch(0.55 0.015 250);
+  --accent: oklch(0.96 0.02 55);
+  --accent-foreground: oklch(0.25 0.02 250);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.92 0.01 250);
+  --input: oklch(0.92 0.01 250);
+  --ring: oklch(0.596 0.145 163);
+  --chart-1: oklch(0.596 0.145 163);
+  --chart-2: oklch(0.7 0.08 55);
+  --chart-3: oklch(0.78 0.15 85);
+  --chart-4: oklch(0.45 0.1 55);
+  --chart-5: oklch(0.55 0.12 163);
+  --sidebar: oklch(0.97 0.005 55);
+  --sidebar-foreground: oklch(0.25 0.02 250);
+  --sidebar-primary: oklch(0.596 0.145 163);
+  --sidebar-primary-foreground: oklch(0.98 0.01 163);
+  --sidebar-accent: oklch(0.96 0.02 55);
+  --sidebar-accent-foreground: oklch(0.25 0.02 250);
+  --sidebar-border: oklch(0.92 0.02 55);
+  --sidebar-ring: oklch(0.596 0.145 163);
+}
+
+.dark {
+  --radius: 0.75rem;
+  --background: oklch(0.18 0.01 250);
+  --foreground: oklch(0.9 0.01 250);
+  --card: oklch(0.22 0.015 250);
+  --card-foreground: oklch(0.9 0.01 250);
+  --popover: oklch(0.22 0.015 250);
+  --popover-foreground: oklch(0.9 0.01 250);
+  --primary: oklch(0.596 0.145 163);
+  --primary-foreground: oklch(0.98 0.01 163);
+  --secondary: oklch(0.25 0.02 55);
+  --secondary-foreground: oklch(0.8 0.04 55);
+  --muted: oklch(0.25 0.01 250);
+  --muted-foreground: oklch(0.65 0.01 250);
+  --accent: oklch(0.25 0.02 55);
+  --accent-foreground: oklch(0.9 0.01 250);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.596 0.145 163);
+  --chart-1: oklch(0.596 0.145 163);
+  --chart-2: oklch(0.7 0.08 55);
+  --chart-3: oklch(0.78 0.15 85);
+  --chart-4: oklch(0.45 0.1 55);
+  --chart-5: oklch(0.55 0.12 163);
+  --sidebar: oklch(0.2 0.01 55);
+  --sidebar-foreground: oklch(0.9 0.01 250);
+  --sidebar-primary: oklch(0.596 0.145 163);
+  --sidebar-primary-foreground: oklch(0.98 0.01 163);
+  --sidebar-accent: oklch(0.25 0.02 55);
+  --sidebar-accent-foreground: oklch(0.9 0.01 250);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.596 0.145 163);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+}
+
+/* ============================================================
+   ReLoop — Eco-Industrial Materialism Utilities
+   Manifest-style cards, kraft paper textures, stamp badges
+   ============================================================ */
+
+/* Kraft paper card surface — warm off-white with subtle texture */
+.manifest-card {
+  background: oklch(0.992 0.002 90);
+  border: 1.5px solid oklch(0.85 0.03 55 / 0.3);
+  border-left: 4px solid oklch(0.45 0.1 55);
+  border-radius: 0.75rem;
+  position: relative;
+  box-shadow:
+    0 1px 3px oklch(0 0 0 / 0.04),
+    0 4px 12px oklch(0.45 0.05 55 / 0.06);
+}
+
+/* Emerald-themed manifest card */
+.manifest-card-emerald {
+  background: oklch(0.992 0.005 163);
+  border: 1.5px solid oklch(0.85 0.04 163 / 0.3);
+  border-left: 4px solid oklch(0.596 0.145 163);
+  border-radius: 0.75rem;
+  position: relative;
+  box-shadow:
+    0 1px 3px oklch(0 0 0 / 0.04),
+    0 4px 12px oklch(0.596 0.08 163 / 0.06);
+}
+
+/* Manifest section header — looks like a stamped form header */
+.manifest-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1.5px dashed oklch(0.85 0.02 55 / 0.25);
+}
+
+.manifest-header emerald {
+  border-bottom-color: oklch(0.85 0.04 163 / 0.25);
+}
+
+/* Stamp badge — industrial rubber-stamp feel */
+.stamp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1.5px solid;
+}
+
+.stamp-badge-emerald {
+  color: oklch(0.596 0.145 163);
+  background: oklch(0.596 0.145 163 / 0.08);
+  border-color: oklch(0.596 0.145 163 / 0.2);
+}
+
+.stamp-badge-kraft {
+  color: oklch(0.45 0.1 55);
+  background: oklch(0.45 0.1 55 / 0.06);
+  border-color: oklch(0.45 0.1 55 / 0.15);
+}
+
+.stamp-badge-gold {
+  color: oklch(0.65 0.14 85);
+  background: oklch(0.78 0.15 85 / 0.08);
+  border-color: oklch(0.78 0.15 85 / 0.25);
+}
+
+/* Kraft brown warm surface for alerts/banners */
+.surface-kraft {
+  background: oklch(0.975 0.015 55);
+  border: 1px solid oklch(0.85 0.03 55 / 0.3);
+  border-left: 3px solid oklch(0.45 0.1 55);
+}
+
+.surface-emerald {
+  background: oklch(0.975 0.015 163);
+  border: 1px solid oklch(0.85 0.04 163 / 0.3);
+  border-left: 3px solid oklch(0.596 0.145 163);
+}
+
+/* Dashed separator — looks like a tear line on a manifest */
+.tear-line {
+  border-top: 1.5px dashed oklch(0.85 0.02 55 / 0.25);
+  margin: 1rem 0;
+}
+
+/* Data row — key-value pair in manifest style */
+.data-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.625rem 0;
+}
+
+.data-row + .data-row {
+  border-top: 1px solid oklch(0.92 0.005 250);
+}
