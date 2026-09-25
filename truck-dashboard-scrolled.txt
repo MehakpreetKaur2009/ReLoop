@@ -1,0 +1,6 @@
+Truck Dashboard Scrolled View:
+- Impact & Earnings Today section with 3 metric cards visible
+- Fuel Rebate Wallet: gradient green card showing ₹2,340 available points
+- Monthly Target progress bar showing 47% of ₹5,000
+- View Other Requests button at bottom
+- All sections rendering correctly with proper styling

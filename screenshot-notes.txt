@@ -1,0 +1,9 @@
+Mall Dashboard Screenshot Notes:
+- Header bar with ReLoop logo (green/brown icon), Crown icon with "Free Plan: 10 Days Left", 3-dot menu
+- Trial Status banner: kraft brown themed with alert icon
+- Log Waste section: kraft brown left accent, 3 material buttons (Cardboard, Plastic Wrap, Wooden Pallets)
+- Weight input with +10 and +50 quick-add buttons
+- Broadcast Pickup Request button in emerald green
+- ESG Impact Summary: 3 metric cards (2,450 kg diverted, 186 CO2 saved, ₹12,500 cost saved)
+- Scheduled Pickups section with Schedule button and placeholder text
+- All looking correct and well-designed

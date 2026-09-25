@@ -1,0 +1,10 @@
+Truck Dashboard Screenshot Notes:
+- Route Active banner with GPS status
+- Two nearby pickup request cards with Accept/Decline buttons
+- Accept Pickup triggers full task view with:
+  - Green "Pickup Accepted" header card
+  - Pickup Details (address, contact, dock, load)
+  - Interactive checklist with 3 items
+  - Impact & Earnings widget (₹1,850 revenue, 48 miles saved, ₹320 fuel bonus)
+  - Fuel Rebate Wallet (gradient green card with ₹2,340 points)
+- All features working correctly

@@ -1,0 +1,13 @@
+Polish Pass Screenshots:
+1. Welcome Screen - Excellent. Kraft paper grain visible, manifest card with "ACCESS ACCOUNT" header, stamp badge "CIRCULAR LOGISTICS", recycling loop logo with brown dot accent. Clean and branded.
+2. Role Select - Excellent. "STEP 2 OF 3" stamp badge, "WASTE GENERATOR" and "RETURN FLEET" headers on cards, dashed separator lines, kraft/emerald left borders. Very manifest-like.
+3. Onboarding (Truck) - Good. "REGISTRATION MANIFEST" header with FileText icon, "STEP 3 OF 3" badge, role indicator card showing "RETURN FLEET", emerald manifest card with "FLEET DETAILS" header, uppercase labels. GPS toggle present.
+4. Dashboard (no role) - Clean empty state with recycling icon, branded message "start closing the loop", green CTA button.
+
+Issues noted:
+- Onboarding form is slightly cut off at bottom (button text truncated) - need to check overflow
+- All screens look cohesive and brand-consistent now
+- No TypeScript errors, no browser console errors
+- Vite HMR is working correctly
+
+Next: Need to screenshot the actual mall and truck dashboards by navigating through the flow

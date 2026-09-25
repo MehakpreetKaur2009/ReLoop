@@ -1,0 +1,9 @@
+Style Review Summary:
+- Design reads as generic SaaS, needs more tactile/industrial material language
+- Need: kraft-brown card edges, manifest-like dividers, stamp badges, circular-loop motifs
+- Need: stronger typography hierarchy, more assertive headlines
+- Need: less empty whitespace, more operational/stacked cockpit feel
+- Keep: logo, emerald primary, role-card structure, mobile-first flow
+- Apply: kraft edge on cards, stamp badges for status, manifest-style headers
+- Apply: branded voice replacing generic copy (e.g., "Turn empty return miles into pickup revenue")
+- Every screen needs at least one logistics-material cue

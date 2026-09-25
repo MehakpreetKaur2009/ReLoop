@@ -1,0 +1,17 @@
+Truck Dashboard - Final Polish Pass:
+
+Idle state shows:
+- Route Active banner with emerald surface, GPS LIVE stamp badge, Bay Empty indicator
+- Nearby Pickup Requests section with AI geofence label
+- Two manifest-style pickup request cards (Central Mall and Phoenix Marketcity)
+- Each card shows weight, material, distance, fuel allowance incentive
+- Accept/Decline buttons with emerald styling
+
+Accepted state shows:
+- Emerald gradient "Pickup Accepted" card with In Progress badge
+- Pickup Details manifest card with kraft left border: Address, Contact Person (clickable phone link), Loading Dock, Load
+- Pickup Checklist with 0/3 stamp badge, three checkable items
+- Impact & Earnings section visible at bottom
+- View Other Requests button
+
+All screens are fully functional, brand-consistent, and the manifest-style design language is applied throughout.

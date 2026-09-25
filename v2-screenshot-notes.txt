@@ -1,0 +1,7 @@
+V2 Screenshot Findings:
+1. Dashboard (/dashboard) - Shows the header bar with the BELL ICON visible with a green badge showing "2" unread notifications. The crown icon is next to it. The "No Role Selected" fallback is shown since no user is authenticated yet.
+2. Welcome Screen (/) - The auth form renders correctly with the ReLoop branding, green/brown recycling loop logo, and ACCESS ACCOUNT form.
+
+Both screens show the header bar is working correctly with the notification bell and crown subscription button side by side.
+
+Next: Need to navigate to the role-select and onboarding flow to verify the full truck dashboard with map.

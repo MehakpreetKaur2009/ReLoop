@@ -1,0 +1,11 @@
+Mall Dashboard - Final Polish Pass:
+- Header bar with ReLoop logo, FREE: 10D LEFT crown badge, 3-dot menu - all present and branded
+- Trial Status banner - kraft surface, warning icon, clear messaging about upgrade
+- Log Waste Pickup card - kraft manifest card with left border, "LOG WASTE PICKUP" header, "ACTIVE" stamp badge
+- Material selection - 3 buttons (Cardboard, Plastic Wrap, Wooden Pallets) with icons
+- Weight input with +10/+50 quick add buttons
+- Broadcast Pickup Request button - emerald green
+- ESG Impact Summary card - 3 metric boxes (2,450 kg diverted, 186 CO2 saved, 12,500 saved)
+- Scheduled Pickups card with Schedule button and empty state
+
+Everything looks excellent and cohesive. The manifest-style design language is consistent across all widgets.
